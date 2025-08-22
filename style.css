@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom,red,yellow);
+
+}
+.wrapper{
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    border: 3px solid rgb(201,201,201);
+    border-radius: 2em;
+    padding: 5em 3em;
+}
+h1{
+    font-size: 40px;
+}
+.gradient-text{
+    background: linear-gradient(to right, #ff416c, #ff4b2b, #ffcc00);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3{
+    font-size: medium;
+    color: blue;
+
+}
+#choices{
+    display: flex;
+    gap: 1em;
+}
+#choices button{
+    padding: 0,53m 1.2em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#choices button:hover{
+    background-color: antiquewhite;
+    border: 3px solid rgb(109,153,255);
+    transform: scale(1.05);
+}
+#player-choice,
+#computer-choice{
+    font-size: 1.0em;
+    font-weight: 600;
+    color: #7abc85;
+}
+#resultDisplay{
+    font-size: 2.5em;
+    border: 3px solid rgb(109,153,255);
+    border-radius: 0.5em;
+    padding: 10px 50px;
+}
